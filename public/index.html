@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Educazione Civica</title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="shortcut icon" href="./images/demoman.jpg" type="image/x-icon">
+    </head>
+
+    <body class="flex column">
+        <div class="flex section column" id="section1">
+            <!-- Sezione 1 -->
+            <h1 class="flex">L'alcohol</h1>
+            <div class="flex">
+                <div class="flex column s1C">
+                    <h2>In questa presentazione parleremo di:</h2>
+                    <ul>
+                        <li>Alcohol e i suoi effetti</li>
+                        <li>Alcohol alla guida</li>
+                        <li>Tasso alcolemico</li>
+                    </ul>
+                </div>
+                <img class="s1Img" src="./images/drinking.jpg" alt="">
+            </div>
+            <h3>Presentazione di Bonari Andrea, Curcio Lyan, Giovio Samuele, Pretashi Vasiljan</h3>
+        </div>
+        <div class="flex section" id="section2">
+            <!-- Sezione 2 -->
+            Slide 1
+        </div>
+        <div class="flex section" id="section3">
+            <!-- Sezione 3 -->
+            Slide 2
+        </div>
+        <div class="flex section column" id="section4">
+            <!-- Sezione 4 -->
+            <p>Questa tabella indica le sanzioni secondo la legge italiana</p>
+            <table border="1" cellpadding="10">
+                <tr class="table1">
+                    <td><strong>TASSO ALCOLEMICO</strong></td>
+                    <td><strong>STATO CONDUCENTE</strong></td>
+                    <td><strong>TIPO DI</strong><br><strong>SANZIONE</strong></td>
+                    <td style="width: 40%; "><strong>SANZIONI</strong></td>
+                    <td style="width: 30%;"><strong>CONSEGUENZE FISICHE</strong></td>
+                </tr>
+                <tr class="table2">
+                    <td>Fino a 0,5 g/l</td>
+                    <td>Normale</td>
+                    <td>Nessuna</td>
+                    <td style="padding: 5px;">Nessuna.</td>
+                    <td>Riduzione capacità di vigilanza e controllo; Vomito.</td>
+                </tr>
+                <tr class="table1">
+                    <td>Da 0,5 g/l a 0,8 g/l</td>
+                    <td>Biascica</td>
+                    <td>Amministrativa</td>
+                    <td style="padding: 5px;">Ammenda da 500€ a 2000€.<br>Sospensione della patente da 3 a 6 mesi.</td>
+                    <td>Riduzione capacità di giudizio; Riflessi alterati (sonori e luminosi).</td>
+                </tr>
+                <tr class="table2">
+                    <td>Da 0,8 g/l a 1,5 g/l</td>
+                    <td>Ubriaco</td>
+                    <td>Amministrativa e penale</td>
+                    <td style="padding: 5px;">Ammenda da 800€ a 3000€.<br>Arresto fino a 6 mesi.<br>Sospensione dellapatente da 6 mesi a 1 anno.</td>
+                    <td>Comportamenti socialmente inadeguati; Linguaggio inadeguato; Compromissione dell'equilibrio</td>
+                </tr>
+                <tr class="table1">
+                    <td>Oltre 1,5 g/l</td>
+                    <td>Molto ubriaco</td>
+                    <td>Amministrativa e penale</td>
+                    <td style="padding: 5px;">Ammenda da 1500€ a 6000€.<br>Arresto da 6 mesi a 1 anno.<br>Sospensionedella patente da 1 anno a 2 anni.<br>Confisca del veicolo se di proprietà del conducente; incaso contrario arresto da 2 a 4 anni.</td>
+                    <td>Ipotermia; Allucinazioni; Incontinenza; Battito cardiaco rallentato; Fame d'aria</td>
+                </tr>
+            </table>
+        </div>
+        <div class="flex section" id="section5">
+            <!-- Sezione 5 -->
+            <div class="flex">
+                <div class="calcContainer flex">
+                    <div class="flex column">
+                        <div class="flex">
+                            <div class="flex">
+                                <div class="flex column">
+                                    <input type="number" name="G" placeholder="Gradazione alcolica" min="0">
+                                    <div style="margin-left: -20px;" class="flex"><input type="number" name="V"
+                                            placeholder="Volume della bevanda" min="0"><span
+                                            style="margin-left:-35px; margin-top: -15px;">ml</span></div>
+                                    <div style="margin-left: -20px;" class="flex"><input type="number" name="P"
+                                            placeholder="Peso corporeo" min="0"><span
+                                            style="margin-left:-35px; margin-top: -15px;">kg</span></div>
+                                    <div class="flex column">
+                                        <h4>Scegli un opzione</h4>
+                                        <div>
+                                            <input type="radio" name="K" value="0.73" id="m" checked><label
+                                                for="M">Maschio</label>
+                                            <input type="radio" name="K" value="0.66"><label for="F">Femmina</label>
+                                        </div>
+                                    </div>
+                                    <button id="calc">Calcola</button>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="flex">
+                                <div>
+                                    <h2>Come usare il calcolatore</h2>
+                                    <p>Per usarlo inserisci tutti i dati richiesti e clicca calcola, il calcolatore
+                                        restituirà il tuo tasso alcolemico.</p>
+                                    <p>Il peso corporeo va inserito in kg, mentre il volume va inserito in ml.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="result">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="navMenu">
+            <a id="navButton" class="navButton flex">
+                <img class="menuImg" src="./images/menu.png" alt="Menu" height="30px" width="30px">
+            </a>
+            <div class="menu">
+                <h1>Tabella dei contenuti</h1>
+                <p>Premi su un tasto per navigare a quel punto</p>
+                <p>1) <a href="#section1">Intestazione</a></p>
+                <p>2) <a href="#section2">Punto 2</a></p>
+                <p>3) <a href="#section3">Punto 3</a></p>
+                <p>4) <a href="#section4">Tabella informativa</a></p>
+                <p>5) <a href="#section5">Calcolatore</a></p>
+            </div>
+        </div>
+
+        <a href="#section2" id="move">
+            <div class="moveMenu">
+                <h1><strong id="moveText">˅</strong></h1>
+            </div>
+        </a>
+        <script src="./index.js"></script>
+    </body>
+</html>

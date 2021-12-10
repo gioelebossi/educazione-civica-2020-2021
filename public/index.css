@@ -1,0 +1,176 @@
+html {
+    height: 500%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(darkgray, gray);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.section {
+    height: 100%;
+    width: 100%;
+}
+
+.section>div {
+    height: 100%;
+    width: 50%;
+}
+
+.navButton {
+    height: 1em;
+    width: 1em;
+    text-align: center;
+}
+
+input {
+    height: 1em;
+    padding: 0.3em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+}
+
+.navMenu{
+    min-height: 15px;
+    min-width: 15px;
+    position: fixed;
+    text-align: center;
+    left: 1em;
+    top: 1em;
+    padding: 1em;
+    border-radius: 1.5em;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.navMenu:hover>a{
+    display: none;
+}
+
+.navMenu>.menu {
+    width: 0;
+    height: 0;
+    transition: width 0.5s, height 0.5s;
+}
+
+.menu>* {
+    cursor: default;
+}
+
+.navMenu>.menu>* {
+    font-size: 0;
+    opacity: 0;
+    height: 0;
+    transition: opacity 0.1s ease-in;
+    transition-delay: 0.1s;
+}
+
+.navMenu:hover>.menu>* {
+    font-size: inherit;
+    height: auto;
+    opacity: 1;
+}
+
+.navMenu:hover>.menu {
+    width: 15em;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.calcContainer {
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 2em;
+    background-color: white;
+}
+
+.border {
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 15em;
+    border: 1px solid black;
+    border-radius: 2em;
+    opacity: 0.5;
+}
+
+h4 {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.safe {
+    color: green;
+}
+
+.notSafe {
+    color: red;
+}
+
+#result {
+    text-align: center;
+    font-size: large;
+    margin-top: 1em;
+}
+
+.s1Img {
+    width: 20em;
+    height: 20em;
+    margin-left: 10em;
+}
+
+.s1C>* {
+    width: 17em;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+
+#section4>* {
+    margin: 1em;
+}
+
+.table1 {
+    background-color: #a0c44b;
+}
+
+.table2 {
+    background-color: #fbed5b;
+}
+
+.moveMenu {
+    position: fixed;
+    right: 1em;
+    bottom: 1em;
+    padding: 0.5em;
+    border-radius: 1.5em;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+.moveMenu>h1 {
+    text-align: center;
+    width: 36px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
