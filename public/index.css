@@ -193,6 +193,6 @@ td, th {
 }
 
 .wineImg, .keysImg {
-    margin-left: 1em;
+    margin: 0 1em 0 1em;
     height: 20em;
 }
