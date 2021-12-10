@@ -174,3 +174,25 @@ td, th {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.baseline {
+    align-items: baseline;
+}
+
+.baseline>p>a {
+    color: blue;
+}
+
+#section2, #section3 {
+    padding: 1em;
+    width: calc(100% - 2em);
+}
+
+#section2>div, #section3>div {
+    width: calc(100% - 2em);
+}
+
+.wineImg, .keysImg {
+    margin-left: 1em;
+    height: 20em;
+}
